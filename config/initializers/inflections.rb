@@ -12,5 +12,8 @@
 
 # These inflection rules are supported but not enabled by default:
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
+   inflect.plural /([^!-~])$/, '\1'
+   inflect.singular /([^!-~])$/, '\1'
+ end
 #   inflect.acronym 'RESTful'
 # end
