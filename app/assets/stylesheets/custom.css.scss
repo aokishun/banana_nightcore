@@ -31,3 +31,54 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
+
+/*登録フォーム*/
+.content {
+position: relative;
+top: 42px;
+}
+
+/*検索フォーム*/
+.search_content {
+  position: relative;
+    left: -4px;
+    bottom: -5px;
+}
+
+/*とうろくボタン位置移動*/
+.creature_btn {
+  position: relative;
+    left: -9px;
+}
+
+/*ヘッター 位置調整*/
+.hearer_itch {
+  position: relative;
+    bottom: -6px;
+}
+
+/*テキストボックスサイズ変更*/
+.sign_textbox {
+   width: 249px !important;
+}
+
+/*送信ボタンのいち変更*/
+.send_btn {
+  position: relative;
+    top: -144px;
+    right: -271px;
+    z-index: 1;
+    height: 212px!important;
+}
+
+/*全体の位置移動*/
+.body_content {
+  position: relative;
+    top: 68px;
+}
+/*ろぐいん位置*/
+.roguin_consent{
+position: relative;
+    right: -275px;
+    top: 70px;
+  }

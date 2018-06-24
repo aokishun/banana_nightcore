@@ -15,6 +15,8 @@ gem 'jquery-ui-rails'
 gem 'mysql2'
 
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 
 gem "compass-rails"
 # Use sqlite3 as the database for Active Record

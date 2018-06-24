@@ -9,33 +9,42 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			   <a class="navbar-brand" href="/">タイトル</a>
+			   <a class="navbar-brand hearer_itch" href="/">たいとる</a>
 	</div>
 
 		<div class="collapse navbar-collapse" id="navbarEexample">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/">新規投稿順</a></li>
+				<li class="active hearer_itch"><a href="/">あたらしい順</a></li>
         <li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">ランキング <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle hearer_itch" data-toggle="dropdown" role="button">らんきんぐ <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="/ranking_week">week</a></li>
-						<li><a href="/ranking_month">month</a></li>
-						<li><a href="/ranking_year">year</a></li>
+						<li><a href="/ranking_week">いちしゅうかん</a></li>
+						<li><a href="/ranking_month">いちかげつ</a></li>
+						<li><a href="/ranking_year">いちねん</a></li>
 					</ul>
 				</li>
-        <li><a href="#">マイページ</a></li>
-				<li><a href="#">投稿一覧</a></li>
-        <li><a href="#">ランダム</a></li>
+				<% if signed_in? %>
+					<li><a href="#">マイページ</a></li>
+					<li><a href="#">投稿一覧</a></li>
+					<li><a href="#">ランダム</a></li>
+				<% end %>
 
 			</ul>
 		<div class="header_right">
-			<button type="button" class="btn btn-success navbar-btn navbar-right ">Sign in</button>
-			<form class="navbar-form navbar-right" role="search">
+			<% if signed_in? %>
+  			<%= link_to "ろぐいん", destroy_user_session_path, method: "delete", class: "btn btn-lg btn-primary btn-success navbar-btn navbar-right" %>
+			<% else %>
+				<%= link_to "ろぐいん", new_user_session_path, class: "btn btn-lg btn-primary btn-success navbar-btn navbar-right" %>
+  			<%= link_to "とうろく", new_user_registration_path, class: "btn btn-lg btn-primary btn-success navbar-btn navbar-right creature_btn" %>
+			<% end %>
+			<form class="navbar-form navbar-right search_content" role="search">
 				<div class="form-group">
-					<input type="text" class="form-control " placeholder="検索キーワード">
+					<input type="text" class="form-control " placeholder="きーわーど">
 				</div>
-				<button type="submit" class="btn btn-default ">検索</button>
+				<button type="submit" class="btn btn-default ">けんさく</button>
 			</form>
+
+			<%= link_to 'Signin with Google', user_google_omniauth_authorize_path(:google_oauth2), class: "btn btn-lg btn-primary btn-success navbar-btn navbar-right"%>
 		</div>
 
 
