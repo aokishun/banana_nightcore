@@ -15,8 +15,11 @@ gem 'jquery-ui-rails'
 gem 'mysql2'
 
 gem 'devise'
+# SNS API設定
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 gem "compass-rails"
 # Use sqlite3 as the database for Active Record
