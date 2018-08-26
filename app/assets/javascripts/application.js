@@ -17,4 +17,8 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+
+
+// sample
+//= require youtube.js
+//= require youtube1.js

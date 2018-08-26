@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def top
-    
+    @blocks = Block.all
   end
 
   def ranking_month

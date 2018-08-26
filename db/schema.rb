@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_24_013755) do
+ActiveRecord::Schema.define(version: 2018_08_26_021505) do
+
+  create_table "blocks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+    t.string "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "columns_priv", primary_key: ["Host", "Db", "User", "Table_name", "Column_name"], options: "/*!50100 TABLESPACE `mysql` */ ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin STATS_PERSISTENT=0", comment: "Column privileges", force: :cascade do |t|
     t.string "Host", limit: 60, default: "", null: false
