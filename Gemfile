@@ -15,6 +15,10 @@ gem 'jquery-ui-rails'
 gem 'mysql2'
 
 gem 'devise'
+
+#javasqriptを動かすtest
+gem 'jquery-turbolinks'
+
 # SNS API設定
 gem 'omniauth'
 gem 'omniauth-google-oauth2'

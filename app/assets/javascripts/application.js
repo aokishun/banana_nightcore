@@ -10,15 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
 // Bootstrap Sass
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require activestorage
+//= require jquery
+//= require jquery_ujs
+//= require jquery.turbolinks
 //= require turbolinks
-
-
-// sample
-//= require youtube.js
-//= require youtube1.js
