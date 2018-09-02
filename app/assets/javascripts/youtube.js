@@ -56,44 +56,31 @@ for (var i = 0; i < 4; i++) {
   document.write(
     '</div>'
   );
+  document.write(
+    '<button id="play' + Number(i + 1) + '" style="color:#808080; ">play</button>',
+    '<button id="pause' + Number(i + 1) + '" style="color:#808080; ">pause</button>',
+    '<button id="stop' + Number(i + 1) + '" style="color:#808080; ">stop</button>',
+    '<button id="clear' + Number(i + 1) + '" style="color:#808080; ">clear</button></br>'
+  );
+
   if (i == 0) {
     document.write(
-      '<button id="play1" style="color:#808080; ">play</button>',
-      '<button id="pause1" style="color:#808080; ">pause</button>',
-      '<button id="stop1" style="color:#808080; ">stop</button>',
-      '<button id="clear1" style="color:#808080; ">clear</button></br>',
       '<a href="https://www.youtube.com/watch?v=su0FCBRwVpE" style="color:black;">インドア系ならトラックメーカー</a>'
     );
   } else if (i == 1) {
     document.write(
-      '<button id="play2" style="color:#808080; ">play</button>',
-      '<button id="pause2" style="color:#808080; ">pause</button>',
-      '<button id="stop2" style="color:#808080; ">stop</button>',
-      '<button id="clear2" style="color:#808080; ">clear</button></br>',
       '<a href="https://www.youtube.com/watch?v=i6DgjSUiT0w" style="color:black;">眠れないほど</a>'
     );
   } else if (i == 2) {
     document.write(
-      '<button id="play3" style="color:#808080; ">play</button>',
-      '<button id="pause3" style="color:#808080; ">pause</button>',
-      '<button id="stop3" style="color:#808080; ">stop</button>',
-      '<button id="clear3" style="color:#808080; ">clear</button></br>',
       '<a href="https://www.youtube.com/watch?v=TiVIFMbwxOc" style="color:black;">God Is Girl</a>'
     );
   } else if (i == 3) {
     document.write(
-      '<button id="play4" style="color:#808080; ">play</button>',
-      '<button id="pause4" style="color:#808080; ">pause</button>',
-      '<button id="stop4" style="color:#808080; ">stop</button>',
-      '<button id="clear4" style="color:#808080; ">clear</button></br>',
       '<a href="https://www.youtube.com/watch?v=YaufeJA0HQA" style="color:black;">Truth or Dare</a>'
     );
   } else {
     document.write(
-      '<button id="play1" style="color:#808080; ">play</button>',
-      '<button id="pause1" style="color:#808080; ">pause</button>',
-      '<button id="stop1" style="color:#808080; ">stop</button>',
-      '<button id="clear1" style="color:#808080; ">clear</button></br>',
       '<a href="https://www.youtube.com/watch?v=su0FCBRwVpE" style="color:black;">インドア系ならトラックメーカー</a>'
     );
   }
